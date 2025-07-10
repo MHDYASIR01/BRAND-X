@@ -1,0 +1,130 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+.about {
+  padding: 50px 10px 300px;
+  max-width: 1000px;
+  margin: auto;
+  font-size: larger;
+  color: brown;
+}
+
+
+.expiriances{
+    padding: 60px 20px 300px;
+    max-width: 1000px;
+    margin:auto;
+    font-size: larger;
+    color: #333;
+}
+.education{
+    padding: 60px 20px 300px;
+    max-width: 1000px;
+    margin: auto;
+    font-size: larger;
+}
+.interst{
+  padding: 60px 20px 300px;
+    max-width: 1000px;
+    margin: auto;
+    font-size: larger;
+}
+    
+
+.skills{
+  padding: 60px 20px 300px;
+  max-width: 1000px;
+  margin: auto;
+  font-size: larger;
+}
+.awards{
+  padding: 60px 20px 300px;
+  max-width: 1000px;
+  margin: auto;
+  font-size: larger;
+
+}
+h1, h2 {
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+
+}
+
+/* Toggle Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive Media Query */
+
+ @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
